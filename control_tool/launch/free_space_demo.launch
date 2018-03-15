@@ -1,0 +1,11 @@
+<launch>
+
+  <node name="control_node" pkg="control_tool" type="control_node">
+  </node>
+  
+  <node name="save_node" pkg="control_tool" type="save_node">
+  </node>
+
+  <node pkg="rviz" name="rviz" type="rviz"  args="-d $(find control_tool)/cfg/demo.rviz"/>
+
+</launch>
